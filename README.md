@@ -1,19 +1,19 @@
 # Go API - Gerador de boilerplate
-## Install
+### Install
 go install github.com/discord-gophers/goapi-gen@latest
-## Generator
+### Generator
 goapi-gen --out ./internal/api/spec/journey.gen.spec.go ./internal/api/spec/journey.spec.json
 
-# Go
+### Go
 go mod init journey  <!-- iniciar módulo em go -->
 go mod tidy          <!-- install dep -->
 go get -u ./...      <!-- update dep -->
 go generate ./...
 
-# Sqlc
+### Sqlc
 go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
 
-# Tern
+### Tern
 go install github.com/jackc/tern/v2@latest
 tern init ./internal/pgstore/migrations
 <!-- pode apagar o arquivo de exemplo em migrations -->
@@ -26,11 +26,11 @@ tern new --migrations ./internal/pgstore/migrations create_links_table
 
 tern migrate --migrations ./internal/pgstore/migrations --config ./internal/pgstore/migrations/tern.conf
 
-# ENV
+### ENV
 inserir variáveis no .zshrc
 source ~/.zshrc
 
-# Links
+### Links
 https://github.com/rocketseat-education/nlw-journey-go/
 https://nlw-journey.apidocumentation.com/reference
 https://editor.swagger.io/
